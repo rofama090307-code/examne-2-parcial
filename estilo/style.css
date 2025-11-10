@@ -1,0 +1,134 @@
+/* 🎨 Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(180deg, #e8f5e9 0%, #ffffff 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 🏟️ Encabezado */
+header {
+    background: #006400;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 5px solid #00c853;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ⚽ Contenido principal */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #004d00;
+    border-left: 6px solid #00c853;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+section h3 {
+    color: #006400;
+    margin-top: 1.5rem;
+}
+
+/* 📷 Imagen */
+section img {
+    display: block;
+    margin: 1rem auto;
+    border: 3px solid #00c853;
+    border-radius: 50%;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* 📋 Listas */
+ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+ul li {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Soccer_ball.svg') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin: 0.5rem 0;
+}
+
+/* 🔗 Enlaces */
+a {
+    color: #00c853;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 🧤 Footer */
+footer {
+    background: #004d00;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 5px solid #00c853;
+}
+
+/* 📱 Diseño Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    section img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section h3 {
+        font-size: 1.1rem;
+    }
+}
